@@ -16,14 +16,6 @@ import { setExcludeFolder } from './utils';
     });
   }
 
-  function getName(pkgName: string) {
-    if (['alita'].includes(pkgName)) {
-      return pkgName;
-    } else {
-      return `@dumijs/${pkgName}`;
-    }
-  }
-
   function getVersion() {
     return require('../lerna.json').version;
   }
@@ -33,7 +25,7 @@ import { setExcludeFolder } from './utils';
     if (!opts.force && fs.existsSync(path.join(pkgDir, 'package.json'))) {
       console.log(`${opts.pkg} exists`);
     } else {
-      const name = getName(opts.pkg);
+      const name = opts.pkg;
 
       // package.json
       const pkgPkgJSONPath = path.join(pkgDir, 'package.json');
@@ -56,14 +48,11 @@ import { setExcludeFolder } from './utils';
             },
             repository: {
               type: 'git',
-              url: 'https://github.com/alitajs/alita-next',
+              url: 'https://github.com/umijs/umi-preset-pro',
             },
-            authors: [
-              'xiaohuoni <xiaohuoni@gmail.com> (https://github.com/xiaohuoni)',
-            ],
             license: 'MIT',
-            bugs: 'https://github.com/alitajs/alita-next/issues',
-            homepage: `https://github.com/alitajs/alita-next/tree/master/packages/${opts.pkg}#readme`,
+            bugs: 'https://github.com/umijs/umi-preset-pro/issues',
+            homepage: `https://github.com/umijs/umi-preset-pro/tree/master/packages/${opts.pkg}#readme`,
             publishConfig: {
               access: 'public',
             },
@@ -89,7 +78,7 @@ import { setExcludeFolder } from './utils';
       // README.md
       await fs.writeFile(
         path.join(pkgDir, 'README.md'),
-        `# ${name}\n\nSee our website [alita](https://d.umijs.org) for more information.`,
+        `# ${name}\n\nSee our website [ant design pro](https://pro.ant.design) for more information.`,
         'utf-8',
       );
 

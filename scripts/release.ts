@@ -40,7 +40,7 @@ import { assert, eachPkg, getPkgs } from './utils';
   logger.event('check npm ownership');
   const whoami = (await $`npm whoami`).stdout.trim();
   await Promise.all(
-    ['alita'].map(async (pkg) => {
+    ['umi-preset-pro'].map(async (pkg) => {
       const owners = (await $`npm owner ls ${pkg}`).stdout
         .trim()
         .split('\n')
@@ -89,9 +89,10 @@ import { assert, eachPkg, getPkgs } from './utils';
     ));
     pkg.scripts['start'] = 'npm run dev';
     pkg.dependencies ||= {};
-    if (pkg.dependencies['alita']) pkg.dependencies['alita'] = version;
-    if (pkg.dependencies['@alita/plugins'])
-      pkg.dependencies['@alita/plugins'] = version;
+    if (pkg.dependencies['umi-preset-pro'])
+      pkg.dependencies['umi-preset-pro'] = version;
+    if (pkg.dependencies['umi-plugins-pro'])
+      pkg.dependencies['umi-plugins-pro'] = version;
     delete pkg.version;
     fs.writeFileSync(
       join(__dirname, '../examples', example, 'package.json'),
@@ -122,7 +123,7 @@ import { assert, eachPkg, getPkgs } from './utils';
   $.verbose = false;
   const innerPkgs = pkgs.filter(
     // do not publish father
-    (pkg) => !['alita'].includes(pkg),
+    (pkg) => !['umi-preset-pro'].includes(pkg),
   );
   let tag = 'latest';
   if (
@@ -139,8 +140,8 @@ import { assert, eachPkg, getPkgs } from './utils';
       logger.info(`+ ${pkg}`);
     }),
   );
-  await $`cd packages/alita && npm publish --tag ${tag}`;
-  logger.info(`+ alita`);
+  await $`cd packages/umi-preset-pro && npm publish --tag ${tag}`;
+  logger.info(`+ umi-preset-pro`);
   $.verbose = true;
 
   // sync tnpm

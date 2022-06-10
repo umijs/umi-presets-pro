@@ -1,11 +1,10 @@
 // @ts-ignore
-import UmiLogo from './packages/plugin-docs/client/theme-doc/icons/umi.png';
 
 export default {
-  title: 'UmiJS',
-  description: '插件化的企业级前端应用框架',
-  logo: UmiLogo,
-  github: 'https://github.com/umijs/umi',
+  title: 'ANT DESIGN PRO',
+  description: '开箱即用的中台前端/设计解决方案',
+  logo: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg',
+  github: 'https://github.com/ant-design/ant-design-pro',
   i18n: [
     { locale: 'en-US', text: 'English' },
     { locale: 'zh-CN', text: '简体中文' },
@@ -23,83 +22,6 @@ export default {
         {
           title: 'Tutorials',
           children: ['tutorials/getting-started', 'tutorials/blog'],
-        },
-        {
-          title: 'API',
-          children: [
-            'api/api',
-            'api/config',
-            'api/runtime-config',
-            'api/commands',
-            'api/plugin-api',
-          ],
-        },
-        {
-          title: 'Introduce',
-          children: [
-            'introduce/introduce',
-            'introduce/philosophy',
-            'introduce/contributing',
-            'introduce/upgrade-to-umi-4',
-          ],
-        },
-        {
-          title: 'Guides',
-          children: [
-            'guides/prepare',
-            'guides/directory-structure',
-            'guides/routes',
-            // 'guides/api-routes',
-            'guides/mock',
-            'guides/proxy',
-            'guides/styling',
-            'guides/typescript',
-            'guides/deployment',
-            'guides/env-variables',
-            'guides/errors',
-            'guides/mfsu',
-            // 'guides/ssr',
-            // 'guides/ssg',
-            'guides/performance',
-            'guides/compile-speed',
-            'guides/bundle-mode',
-            'guides/boilerplate',
-            'guides/generator',
-            'guides/lint',
-            'guides/test',
-            'guides/plugins',
-          ],
-        },
-        {
-          title: 'Umi Max',
-          children: [
-            'max/api',
-            'max/config',
-            'max/layout-menu',
-            'max/antd',
-            'max/charts',
-            'max/data-flow',
-            'max/request',
-            'max/access',
-            'max/i18n',
-            'max/micro-frontend',
-            'max/bacon',
-          ],
-        },
-      ],
-    },
-    {
-      path: '/blog',
-      title: 'Blog',
-      type: 'nav',
-      children: [
-        {
-          title: 'Blog',
-          children: [
-            'umi-4-rc',
-            'mfsu-faster-then-vite',
-            'mfsu-independent-usage',
-          ],
         },
       ],
     },

@@ -1,0 +1,34 @@
+{
+  "name": "umi-preset-pro",
+  "version": "0.0.1-beta.1",
+  "description": "umi preset for ant design pro",
+  "homepage": "https://github.com/umijs/umi-preset-pro/tree/master/packages/umi-preset-pro#readme",
+  "bugs": "https://github.com/umijs/umi-preset-pro/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umijs/umi-preset-pro"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "scripts": {
+    "build": "pnpm tsc",
+    "build:deps": "pnpm esno ../../scripts/bundleDeps.ts",
+    "dev": "pnpm build -- --watch"
+  },
+  "dependencies": {
+    "@umijs/plugins": "4.0.0-rc.21",
+    "umi": "4.0.0-rc.21",
+    "umi-plugins-pro": "0.0.1-beta.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    "chenxiaocong <xiaohuoni@gmail.com> (https://github.com/xiaohuoni)"
+  ]
+}

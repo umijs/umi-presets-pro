@@ -9,9 +9,8 @@
     "check:packageFiles": "esno scripts/checkPackageFiles.ts",
     "dep:update": "pnpm up --interactive --latest --recursive",
     "dev": "esno scripts/turbo.ts --cmd dev",
-    "doc:build": "pnpm doc:deps && umi build",
-    "doc:deps": "esno scripts/turbo.ts --cmd build:extra --scope @umijs/plugin-docs",
-    "doc:dev": "pnpm doc:deps && umi dev",
+    "doc:build": "umi build",
+    "doc:dev": "umi dev",
     "format": "prettier --write .",
     "preinstall": "npx only-allow pnpm",
     "postinstall": "esno scripts/postinstall.ts",
@@ -38,7 +37,8 @@
     "@types/react": "^17.0.40",
     "@types/react-dom": "^17.0.13",
     "@types/resolve": "^1.20.1",
-    "@umijs/utils": "4.0.0-rc.6",
+    "@umijs/plugin-docs": "4.0.0-rc.21",
+    "@umijs/utils": "4.0.0-rc.21",
     "@vercel/ncc": "0.33.3",
     "dts-packer": "^0.0.3",
     "esno": "^0.14.1",
@@ -61,11 +61,12 @@
     "turbo": "^1.1.6",
     "typescript": "^4.6.2",
     "uglify-js": "^3.15.3",
+    "umi": "4.0.0-rc.21",
     "zx": "^4.3.0"
   },
+  "packageManager": "pnpm@6.20.0",
   "engines": {
     "node": ">=14",
     "pnpm": ">=6.20.0"
-  },
-  "packageManager": "pnpm@6.20.0"
+  }
 }

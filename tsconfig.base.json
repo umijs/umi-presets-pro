@@ -11,9 +11,7 @@
     "skipLibCheck": true,
     "target": "es2015",
     "jsx": "react",
-    "paths": {
-      "alita": ["./packages/alita"]
-    }
+    "paths": {}
   },
   "exclude": [
     "**/node_modules",

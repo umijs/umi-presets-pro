@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "alita build",
-    "dev": "alita dev",
-    "plugin": "alita plugin list"
+    "build": "max build",
+    "dev": "max dev",
+    "openapi": "max openapi",
+    "plugin": "max plugin list"
   },
   "dependencies": {
-    "alita": "workspace:*"
+    "@umijs/max": "4.0.0-rc.21",
+    "swagger-ui-react": "^4.12.0",
+    "umi-preset-pro": "workspace:*"
   }
 }
