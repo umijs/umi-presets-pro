@@ -1,0 +1,40 @@
+{
+  "name": "alita",
+  "version": "2.0.0-beta.1",
+  "description": "alita next develop version",
+  "homepage": "https://github.com/alitajs/alita-next/tree/master/packages/alita#readme",
+  "bugs": "https://github.com/alitajs/alita-next/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alitajs/alita-next"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "alita": "bin/alita.js"
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "scripts": {
+    "build": "pnpm tsc",
+    "build:deps": "pnpm esno ../../scripts/bundleDeps.ts",
+    "dev": "pnpm build -- --watch"
+  },
+  "dependencies": {
+    "@umijs/bundler-utils": "4.0.0-rc.6",
+    "@umijs/core": "4.0.0-rc.6",
+    "@umijs/renderer-react": "4.0.0-rc.6",
+    "@umijs/utils": "4.0.0-rc.6",
+    "umi": "4.0.0-rc.6",
+    "v8-compile-cache": "^2.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    "chenxiaocong <xiaohuoni@gmail.com> (https://github.com/xiaohuoni)"
+  ]
+}

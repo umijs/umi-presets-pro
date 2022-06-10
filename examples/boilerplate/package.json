@@ -1,0 +1,13 @@
+{
+  "name": "@example/boilerplate",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "alita build",
+    "dev": "alita dev",
+    "plugin": "alita plugin list"
+  },
+  "dependencies": {
+    "alita": "workspace:*"
+  }
+}
