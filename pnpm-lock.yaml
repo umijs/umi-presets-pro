@@ -81,6 +81,7 @@ importers:
   packages/plugins:
     specifiers:
       '@types/rimraf': ^3.0.2
+      '@types/serve-static': ^1.13.10
       '@umijs/bundler-utils': 4.0.0-rc.21
       '@umijs/openapi': ^1.5.1
       '@umijs/utils': 4.0.0-rc.21
@@ -96,6 +97,7 @@ importers:
       umi: 4.0.0-rc.21_781d6676c98a6c9a0590ee248e7402e2
     devDependencies:
       '@types/rimraf': 3.0.2
+      '@types/serve-static': 1.13.10
 
   packages/umi-preset-pro:
     specifiers:
