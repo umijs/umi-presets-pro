@@ -94,24 +94,9 @@ export default App;
 
   if (api.env === 'development') {
     api.modifyRoutes((routes) => {
-      // return [
-      // {
-      //   path: '/umi/plugin/openapi',
-      //   component: winPath(
-      //     join(absTmpPath!, 'plugin-openapi', 'openapi.tsx'),
-      //   ),
-      // },
-      //   ...routes,
-      // ];
-      // routes.push({
-      //   path: '/umi/plugin/openapi',
-      //   component: winPath(
-      //     join(absTmpPath!, 'plugin-openapi', 'openapi.tsx'),
-      //   ),
-      // },)
       routes['umi/plugin/openapi'] = {
         path: '/umi/plugin/openapi',
-        absPath: '',
+        absPath: '/umi/plugin/openapi',
         id: 'umi/plugin/openapi',
         file: winPath(join(absTmpPath!, 'plugin-openapi', 'openapi.tsx')),
       };
