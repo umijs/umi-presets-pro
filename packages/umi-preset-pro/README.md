@@ -1,4 +1,4 @@
-# umi-preset-pro
+# @umijs/plugin-openapi
 
 umi preset for ant design pro
 

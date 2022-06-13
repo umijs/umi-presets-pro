@@ -2,11 +2,11 @@
   "name": "@umijs/plugin-openapi",
   "version": "2.0.0",
   "description": "umi-plugins-pro",
-  "homepage": "https://github.com/umijs/umi-preset-pro/tree/master/packages/plugins#readme",
-  "bugs": "https://github.com/umijs/umi-preset-pro/issues",
+  "homepage": "https://github.com/umijs/@umijs/plugin-openapi/tree/master/packages/plugins#readme",
+  "bugs": "https://github.com/umijs/@umijs/plugin-openapi/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/umijs/umi-preset-pro"
+    "url": "https://github.com/umijs/@umijs/plugin-openapi"
   },
   "license": "MIT",
   "main": "dist/index.js",
