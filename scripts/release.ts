@@ -91,8 +91,8 @@ import { assert, eachPkg, getPkgs } from './utils';
     pkg.dependencies ||= {};
     if (pkg.dependencies['@umijs/max-plugin-openapi'])
       pkg.dependencies['@umijs/max-plugin-openapi'] = version;
-    if (pkg.dependencies['umi-plugins-pro'])
-      pkg.dependencies['umi-plugins-pro'] = version;
+    if (pkg.dependencies['@umijs/max-plugin-openapi'])
+      pkg.dependencies['@umijs/max-plugin-openapi'] = version;
     delete pkg.version;
     fs.writeFileSync(
       join(__dirname, '../examples', example, 'package.json'),

@@ -1,4 +1,4 @@
-# umi-preset-pro
+# umi-presets-pro
 
 umi preset for ant design pro
 

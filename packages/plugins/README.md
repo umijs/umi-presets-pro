@@ -1,4 +1,4 @@
-# umi-plugins-pro
+# @umijs/max-plugin-openapi
 
 umi plugins for ant design pro
 
