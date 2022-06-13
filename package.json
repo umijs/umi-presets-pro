@@ -5,7 +5,7 @@
     "build": "esno scripts/turbo.ts --cmd build",
     "build:extra": "esno scripts/turbo.ts --cmd build:extra",
     "build:force": "esno scripts/turbo.ts --cmd build --no-cache",
-    "build:release": "esno scripts/turbo.ts --cmd build --no-cache -- --declarationMap false",
+    "build:release": "esno scripts/turbo.ts --cmd build --no-cache --declarationMap false",
     "check:packageFiles": "esno scripts/checkPackageFiles.ts",
     "dep:update": "pnpm up --interactive --latest --recursive",
     "dev": "esno scripts/turbo.ts --cmd dev",
