@@ -71,7 +71,7 @@ importers:
   examples/boilerplate:
     specifiers:
       '@umijs/max': 4.0.0-rc.21
-      '@umijs/max-plugin-openapi': workspace:*
+      '@umijs/max-plugin-openapi': 1.0.0
       swagger-ui-react: ^4.12.0
     dependencies:
       '@umijs/max': 4.0.0-rc.21
@@ -3029,9 +3029,6 @@ packages:
     engines: {node: '>=8'}
     peerDependencies:
       react: '>=16.3.0'
-    peerDependenciesMeta:
-      react:
-        optional: true
     dependencies:
       '@babel/runtime': 7.18.3
       hoist-non-react-statics: 3.3.2
@@ -3043,9 +3040,6 @@ packages:
     engines: {node: '>=8'}
     peerDependencies:
       react: '>=16.3.0'
-    peerDependenciesMeta:
-      react:
-        optional: true
     dependencies:
       '@babel/runtime': 7.18.3
       hoist-non-react-statics: 3.3.2
@@ -3058,9 +3052,6 @@ packages:
     engines: {node: '>=8'}
     peerDependencies:
       react: '>=16.3.0'
-    peerDependenciesMeta:
-      react:
-        optional: true
     dependencies:
       '@babel/runtime': 7.18.3
       hoist-non-react-statics: 3.3.2
@@ -4004,8 +3995,6 @@ packages:
       eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
       typescript: '*'
     peerDependenciesMeta:
-      eslint:
-        optional: true
       typescript:
         optional: true
     dependencies:
@@ -4024,8 +4013,6 @@ packages:
       eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
       typescript: '*'
     peerDependenciesMeta:
-      eslint:
-        optional: true
       typescript:
         optional: true
     dependencies:
@@ -4045,8 +4032,6 @@ packages:
       eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
       typescript: '*'
     peerDependenciesMeta:
-      eslint:
-        optional: true
       typescript:
         optional: true
     dependencies:
@@ -13609,9 +13594,6 @@ packages:
     resolution: {integrity: sha512-fU1Txz7Budmvamp7bshe4Zi32d0ll7ect+ccxNu9FlObT605GOEB8BfO4tmRJ39R5Zj831VCpvQ05QPBW5yb+w==}
     peerDependencies:
       react: ^18.1.0
-    peerDependenciesMeta:
-      react:
-        optional: true
     dependencies:
       loose-envify: 1.4.0
       react: 18.1.0
