@@ -40,7 +40,7 @@ import { assert, eachPkg, getPkgs } from './utils';
   logger.event('check npm ownership');
   const whoami = (await $`npm whoami`).stdout.trim();
   await Promise.all(
-    ['@umijs/plugin-openapi'].map(async (pkg) => {
+    ['@umijs/max-plugin-openapi'].map(async (pkg) => {
       const owners = (await $`npm owner ls ${pkg}`).stdout
         .trim()
         .split('\n')
@@ -89,8 +89,8 @@ import { assert, eachPkg, getPkgs } from './utils';
     ));
     pkg.scripts['start'] = 'npm run dev';
     pkg.dependencies ||= {};
-    if (pkg.dependencies['@umijs/plugin-openapi'])
-      pkg.dependencies['@umijs/plugin-openapi'] = version;
+    if (pkg.dependencies['@umijs/max-plugin-openapi'])
+      pkg.dependencies['@umijs/max-plugin-openapi'] = version;
     if (pkg.dependencies['umi-plugins-pro'])
       pkg.dependencies['umi-plugins-pro'] = version;
     delete pkg.version;
@@ -123,7 +123,7 @@ import { assert, eachPkg, getPkgs } from './utils';
   $.verbose = false;
   const innerPkgs = pkgs.filter(
     // do not publish father
-    (pkg) => !['@umijs/plugin-openapi'].includes(pkg),
+    (pkg) => !['@umijs/max-plugin-openapi'].includes(pkg),
   );
   let tag = 'latest';
   if (
@@ -140,8 +140,8 @@ import { assert, eachPkg, getPkgs } from './utils';
       logger.info(`+ ${pkg}`);
     }),
   );
-  await $`cd packages/@umijs/plugin-openapi && npm publish --tag ${tag}`;
-  logger.info(`+ @umijs/plugin-openapi`);
+  await $`cd packages/@umijs/max-plugin-openapi && npm publish --tag ${tag}`;
+  logger.info(`+ @umijs/max-plugin-openapi`);
   $.verbose = true;
 
   // sync tnpm

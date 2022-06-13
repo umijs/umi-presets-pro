@@ -1,12 +1,12 @@
 {
-  "name": "@umijs/plugin-openapi",
+  "name": "@umijs/max-plugin-openapi",
   "version": "1.0.0",
   "description": "umi-plugins-pro",
-  "homepage": "https://github.com/umijs/@umijs/plugin-openapi/tree/master/packages/plugins#readme",
-  "bugs": "https://github.com/umijs/@umijs/plugin-openapi/issues",
+  "homepage": "https://github.com/umijs/@umijs/max-plugin-openapi/tree/master/packages/plugins#readme",
+  "bugs": "https://github.com/umijs/@umijs/max-plugin-openapi/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/umijs/@umijs/plugin-openapi"
+    "url": "https://github.com/umijs/@umijs/max-plugin-openapi"
   },
   "license": "MIT",
   "main": "dist/index.js",

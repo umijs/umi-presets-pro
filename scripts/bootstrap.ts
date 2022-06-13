@@ -48,11 +48,11 @@ import { setExcludeFolder } from './utils';
             },
             repository: {
               type: 'git',
-              url: 'https://github.com/umijs/@umijs/plugin-openapi',
+              url: 'https://github.com/umijs/@umijs/max-plugin-openapi',
             },
             license: 'MIT',
-            bugs: 'https://github.com/umijs/@umijs/plugin-openapi/issues',
-            homepage: `https://github.com/umijs/@umijs/plugin-openapi/tree/master/packages/${opts.pkg}#readme`,
+            bugs: 'https://github.com/umijs/@umijs/max-plugin-openapi/issues',
+            homepage: `https://github.com/umijs/@umijs/max-plugin-openapi/tree/master/packages/${opts.pkg}#readme`,
             publishConfig: {
               access: 'public',
             },

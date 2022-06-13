@@ -1,5 +1,5 @@
 export default {
-  presets: [require.resolve('@umijs/plugin-openapi')],
+  presets: [require.resolve('@umijs/max-plugin-openapi')],
   openAPI: {
     requestLibPath: "import request from '@utils/request'",
     // 这里使用 copy 的 url
