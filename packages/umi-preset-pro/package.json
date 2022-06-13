@@ -1,12 +1,12 @@
 {
-  "name": "@umijs/plugin-openapi",
+  "name": "umi-preset-pro",
   "version": "1.0.0",
   "description": "umi preset for ant design pro",
-  "homepage": "https://github.com/umijs/@umijs/plugin-openapi/tree/master/packages/@umijs/plugin-openapi#readme",
-  "bugs": "https://github.com/umijs/@umijs/plugin-openapi/issues",
+  "homepage": "https://github.com/umijs/umi-preset-pro/tree/master/packages/umi-preset-pro#readme",
+  "bugs": "https://github.com/umijs/umi-preset-pro/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/umijs/@umijs/plugin-openapi"
+    "url": "https://github.com/umijs/umi-preset-pro"
   },
   "license": "MIT",
   "main": "dist/index.js",
