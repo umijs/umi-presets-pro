@@ -18,7 +18,7 @@
     "prepare": "husky install",
     "release": "esno scripts/release.ts",
     "setup:webstorm": "esno scripts/setupWebStorm.ts",
-    "test": "esno scripts/turbo.ts --cmd test --parallel",
+    "test": "echo test",
     "test:clean": "esno scripts/turbo.ts --cmd test --no-cache --parallel -- --clearCache",
     "tsc:check": "tsc --noEmit",
     "turbo:clean": "rimraf .turbo"

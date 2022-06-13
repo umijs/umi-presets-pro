@@ -1,6 +1,6 @@
 {
   "name": "umi-preset-pro",
-  "version": "0.0.1-beta.1",
+  "version": "1.0.0",
   "description": "umi preset for ant design pro",
   "homepage": "https://github.com/umijs/umi-preset-pro/tree/master/packages/umi-preset-pro#readme",
   "bugs": "https://github.com/umijs/umi-preset-pro/issues",
