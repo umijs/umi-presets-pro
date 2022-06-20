@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@umijs/max": "4.0.0-rc.21",
-    "@umijs/max-plugin-openapi": "1.0.0",
-    "swagger-ui-react": "^4.12.0"
+    "swagger-ui-react": "^4.12.0",
+    "umi-presets-pro": "1.0.1"
   }
 }

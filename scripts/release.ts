@@ -1,5 +1,4 @@
 import { logger } from '@umijs/utils';
-import { existsSync } from 'fs';
 import getGitRepoInfo from 'git-repo-info';
 import { join } from 'path';
 import rimraf from 'rimraf';
@@ -40,7 +39,7 @@ import { assert, eachPkg, getPkgs } from './utils';
   logger.event('check npm ownership');
   const whoami = (await $`npm whoami`).stdout.trim();
   await Promise.all(
-    ['@umijs/max-plugin-openapi'].map(async (pkg) => {
+    ['umi-preset-pro'].map(async (pkg) => {
       const owners = (await $`npm owner ls ${pkg}`).stdout
         .trim()
         .split('\n')
@@ -53,15 +52,14 @@ import { assert, eachPkg, getPkgs } from './utils';
 
   // clean
   logger.event('clean');
-  eachPkg(pkgs, ({ dir, name }) => {
-    logger.info(`clean dist of ${name}`);
-    rimraf.sync(join(dir, 'dist'));
+  eachPkg(pkgs, ({ pkgPath, pkg }) => {
+    logger.info(`clean dist of ${pkg}`);
+    rimraf.sync(join(pkgPath, 'dist'));
   });
 
   // build packages
   logger.event('build packages');
   await $`npm run build:release`;
-  await $`npm run build:extra`;
 
   // generate changelog
   // TODO
@@ -74,12 +72,11 @@ import { assert, eachPkg, getPkgs } from './utils';
 
   // update example versions
   logger.event('update example versions');
-  const examplesDir = join(__dirname, '../examples');
-  const examples = fs.readdirSync(examplesDir).filter((dir) => {
-    return (
-      !dir.startsWith('.') && existsSync(join(examplesDir, dir, 'package.json'))
-    );
-  });
+  const examples = fs
+    .readdirSync(join(__dirname, '../examples'))
+    .filter((dir) => {
+      return !dir.startsWith('.');
+    });
   examples.forEach((example) => {
     const pkg = require(join(
       __dirname,
@@ -89,10 +86,8 @@ import { assert, eachPkg, getPkgs } from './utils';
     ));
     pkg.scripts['start'] = 'npm run dev';
     pkg.dependencies ||= {};
-    if (pkg.dependencies['@umijs/max-plugin-openapi'])
-      pkg.dependencies['@umijs/max-plugin-openapi'] = version;
-    if (pkg.dependencies['@umijs/max-plugin-openapi'])
-      pkg.dependencies['@umijs/max-plugin-openapi'] = version;
+    if (pkg.dependencies['umi-preset-pro'])
+      pkg.dependencies['umi-preset-pro'] = version;
     delete pkg.version;
     fs.writeFileSync(
       join(__dirname, '../examples', example, 'package.json'),
@@ -123,25 +118,23 @@ import { assert, eachPkg, getPkgs } from './utils';
   $.verbose = false;
   const innerPkgs = pkgs.filter(
     // do not publish father
-    (pkg) => !['@umijs/max-plugin-openapi'].includes(pkg),
+    (pkg) => !['umi-preset-pro'].includes(pkg),
   );
-  let tag = 'latest';
-  if (
+  const tag =
     version.includes('-alpha.') ||
     version.includes('-beta.') ||
     version.includes('-rc.')
-  ) {
-    tag = 'next';
-  }
-  if (version.includes('-canary.')) tag = 'canary';
+      ? 'next'
+      : 'latest';
   await Promise.all(
     innerPkgs.map(async (pkg) => {
       await $`cd packages/${pkg} && npm publish --tag ${tag}`;
       logger.info(`+ ${pkg}`);
     }),
   );
-  await $`cd packages/@umijs/max-plugin-openapi && npm publish --tag ${tag}`;
-  logger.info(`+ @umijs/max-plugin-openapi`);
+  await $`cd packages/umi-preset-pro && npm publish --tag ${tag}`;
+  logger.info(`+ umi-preset-pro`);
+
   $.verbose = true;
 
   // sync tnpm

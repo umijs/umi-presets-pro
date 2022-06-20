@@ -2,11 +2,11 @@
   "name": "@umijs/max-plugin-openapi",
   "version": "1.0.0",
   "description": "@umijs/max-plugin-openapi",
-  "homepage": "https://github.com/umijs/@umijs/max-plugin-openapi/tree/master/packages/plugins#readme",
-  "bugs": "https://github.com/umijs/@umijs/max-plugin-openapi/issues",
+  "homepage": "https://github.com/umijs/umi-presets-pro/tree/master/packages/max-plugin-openapi#readme",
+  "bugs": "https://github.com/umijs/umi-presets-pro/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/umijs/@umijs/max-plugin-openapi"
+    "url": "https://github.com/umijs/umi-presets-pro"
   },
   "license": "MIT",
   "main": "dist/index.js",
@@ -32,6 +32,9 @@
   "devDependencies": {
     "@types/rimraf": "^3.0.2",
     "@types/serve-static": "^1.13.10"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "authors": [
     "chenxiaocong <xiaohuoni@gmail.com> (https://github.com/xiaohuoni)"

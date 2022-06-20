@@ -6,7 +6,7 @@ export default (api: IApi) => {
   });
   const plugins = [
     require.resolve('./features/proconfig'),
-    require.resolve('@umijs/max-plugin-openapi/dist/openapi'),
+    require.resolve('@umijs/max-plugin-openapi'),
   ];
   return {
     plugins,
