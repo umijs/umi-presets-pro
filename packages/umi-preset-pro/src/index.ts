@@ -7,6 +7,8 @@ export default (api: IApi) => {
   const plugins = [
     require.resolve('./features/proconfig'),
     require.resolve('@umijs/max-plugin-openapi'),
+    require.resolve('@alita/plugins/dist/keepalive'),
+    require.resolve('@alita/plugins/dist/tabs-layout'),
   ];
   return {
     plugins,

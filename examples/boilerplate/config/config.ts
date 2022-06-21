@@ -11,4 +11,27 @@ export default {
   request: {
     dataField: '',
   },
+  routes: [
+    {
+      name: '首页',
+      path: '/',
+      component: './index',
+    },
+    {
+      name: '用户',
+      path: '/users',
+      component: './users',
+    },
+    {
+      name: '其他',
+      path: '/foo',
+      component: './foo',
+    },
+  ],
+  antd: {},
+  layout: {
+    title: 'your app title',
+  },
+  // keepalive: [/./],
+  // tabsLayout: {},
 };

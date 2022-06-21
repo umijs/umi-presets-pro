@@ -21,6 +21,7 @@
     "dev": "pnpm build -- --watch"
   },
   "dependencies": {
+    "@alita/plugins": "^3.0.0-rc.11",
     "@umijs/max-plugin-openapi": "1.0.0",
     "@umijs/plugins": "4.0.0-rc.21",
     "umi": "4.0.0-rc.21"
