@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { logger } from '@umijs/utils';
 import getGitRepoInfo from 'git-repo-info';
 import { join } from 'path';
