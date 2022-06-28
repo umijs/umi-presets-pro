@@ -9,6 +9,7 @@ importers:
       '@types/react': ^17.0.45
       '@types/react-dom': ^17.0.17
       '@types/resolve': ^1.20.2
+      '@types/rimraf': 3.0.2
       '@umijs/plugin-docs': 4.0.0-canary.20220628.2
       '@umijs/utils': 4.0.0-canary.20220628.2
       '@vercel/ncc': 0.33.3
@@ -41,6 +42,7 @@ importers:
       '@types/react': 17.0.45
       '@types/react-dom': 17.0.17
       '@types/resolve': 1.20.2
+      '@types/rimraf': 3.0.2
       '@umijs/plugin-docs': 4.0.0-canary.20220628.2_react@17.0.2
       '@umijs/utils': 4.0.0-canary.20220628.2
       '@vercel/ncc': 0.33.3
