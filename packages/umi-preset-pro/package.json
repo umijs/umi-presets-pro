@@ -18,11 +18,11 @@
   "scripts": {
     "build": "pnpm tsc",
     "build:deps": "pnpm esno ../../scripts/bundleDeps.ts",
-    "dev": "pnpm build -- --watch"
+    "dev": "pnpm build --watch"
   },
   "dependencies": {
     "@alita/plugins": "3.0.4",
-    "@umijs/max-plugin-openapi": "1.0.0",
+    "@umijs/max-plugin-openapi": "1.0.1",
     "@umijs/plugins": "4.0.0-canary.20220628.2",
     "umi": "4.0.0-canary.20220628.2"
   },
