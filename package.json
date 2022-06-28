@@ -16,7 +16,7 @@
     "postinstall": "esno scripts/postinstall.ts",
     "jest": "jest",
     "prepare": "husky install",
-    "release": "esno scripts/release.ts",
+    "release": "pnpm build && esno scripts/release.ts",
     "setup:webstorm": "esno scripts/setupWebStorm.ts",
     "test": "echo test",
     "test:clean": "esno scripts/turbo.ts --cmd test --no-cache --parallel -- --clearCache",
