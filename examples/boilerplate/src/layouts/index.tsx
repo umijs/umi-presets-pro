@@ -1,7 +1,7 @@
-import { useOutlet } from 'umi';
+import { useKeepOutlets } from '@umijs/max';
 
 const Layout = () => {
-  const element = useOutlet();
+  const element = useKeepOutlets();
   return <>{element}</>;
 };
 
