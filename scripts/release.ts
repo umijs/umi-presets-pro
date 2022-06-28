@@ -66,8 +66,6 @@ import { assert, eachPkg, getPkgs } from './.internal/utils';
   // build packages
   logger.event('build packages');
   await $`npm run build:release`;
-  await $`npm run build:extra`;
-  await $`npm run build:client`;
 
   logger.event('check client code change');
   const isGitCleanAfterClientBuild = (
@@ -109,7 +107,7 @@ import { assert, eachPkg, getPkgs } from './.internal/utils';
     setDepsVersion({
       pkg,
       version,
-      deps: ['alita'],
+      deps: ['umi-preset-pro'],
     });
     delete pkg.version;
     fs.writeFileSync(
@@ -141,7 +139,7 @@ import { assert, eachPkg, getPkgs } from './.internal/utils';
   // npm publish
   logger.event('pnpm publish');
   $.verbose = false;
-  const innerPkgs = pkgs.filter((pkg) => !['alita'].includes(pkg));
+  const innerPkgs = pkgs.filter((pkg) => !['umi-preset-pro'].includes(pkg));
 
   // check 2fa config
   let otpArg: string[] = [];
@@ -164,8 +162,8 @@ import { assert, eachPkg, getPkgs } from './.internal/utils';
       logger.info(`+ ${pkg}`);
     }),
   );
-  await $`cd packages/alita && npm publish --tag ${tag} ${otpArg}`;
-  logger.info(`+ alita`);
+  await $`cd packages/umi-preset-pro && npm publish --tag ${tag} ${otpArg}`;
+  logger.info(`+ umi-preset-pro`);
 
   $.verbose = true;
 
