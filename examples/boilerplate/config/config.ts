@@ -32,6 +32,6 @@ export default {
   layout: {
     title: 'your app title',
   },
-  // keepalive: [/./],
-  // tabsLayout: {},
+  keepalive: [/./],
+  tabsLayout: {},
 };
