@@ -36,18 +36,25 @@ export default (api: IApi) => {
         const element = useKeepOutlets();
         return <>{element}</>;
       };
-      
+
       export default Layout;
 `,
     });
   });
 
-  api.addLayouts(() => {
-    return [
-      {
-        id: 'max-tabs',
-        file: withTmpPath({ api, path: 'Layout.tsx' }),
-      },
-    ];
+  api.register({
+    key: 'addLayouts',
+    fn() {
+      return [
+        {
+          id: 'max-tabs',
+          file: withTmpPath({ api, path: 'Layout.tsx' }),
+          test: (route: any) => {
+            return route.layout !== false;
+          },
+        },
+      ];
+    },
+    stage: -1,
   });
 };
