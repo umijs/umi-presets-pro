@@ -26,35 +26,37 @@ export function withTmpPath(opts: {
 }
 
 export default (api: IApi) => {
-  api.onGenerateFiles(() => {
-    api.writeTmpFile({
-      path: 'Layout.tsx',
-      content: `
-      import { useKeepOutlets } from '@umijs/max';
-
-      const Layout = () => {
-        const element = useKeepOutlets();
-        return <>{element}</>;
-      };
-
-      export default Layout;
-`,
+  if (api.userConfig?.keepalive) {
+    api.onGenerateFiles(() => {
+      api.writeTmpFile({
+        path: 'Layout.tsx',
+        content: `
+        import { useKeepOutlets } from '@umijs/max';
+  
+        const Layout = () => {
+          const element = useKeepOutlets();
+          return <>{element}</>;
+        };
+  
+        export default Layout;
+  `,
+      });
     });
-  });
 
-  api.register({
-    key: 'addLayouts',
-    fn() {
-      return [
-        {
-          id: 'max-tabs',
-          file: withTmpPath({ api, path: 'Layout.tsx' }),
-          test: (route: any) => {
-            return route.layout !== false;
+    api.register({
+      key: 'addLayouts',
+      fn() {
+        return [
+          {
+            id: 'max-tabs',
+            file: withTmpPath({ api, path: 'Layout.tsx' }),
+            test: (route: any) => {
+              return route.layout !== false;
+            },
           },
-        },
-      ];
-    },
-    stage: -1,
-  });
+        ];
+      },
+      stage: -1,
+    });
+  }
 };
