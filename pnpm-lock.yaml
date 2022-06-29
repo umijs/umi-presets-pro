@@ -110,7 +110,7 @@ importers:
   packages/umi-preset-pro:
     specifiers:
       '@alita/plugins': ^3.0.4
-      '@umijs/max-plugin-openapi': 1.0.4
+      '@umijs/max-plugin-openapi': 1.0.5
       '@umijs/plugins': ^4.0.0-canary.20220628.2
       umi: ^4.0.0-canary.20220628.2
     dependencies:

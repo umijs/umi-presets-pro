@@ -1,6 +1,6 @@
 {
   "name": "umi-presets-pro",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "umi preset for ant design pro",
   "homepage": "https://github.com/umijs/umi-presets-pro/tree/master/packages/umi-presets-pro#readme",
   "bugs": "https://github.com/umijs/umi-presets-pro/issues",
@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@alita/plugins": "^3.0.4",
-    "@umijs/max-plugin-openapi": "1.0.4",
+    "@umijs/max-plugin-openapi": "1.0.5",
     "@umijs/plugins": "^4.0.0-canary.20220628.2",
     "umi": "^4.0.0-canary.20220628.2"
   },
