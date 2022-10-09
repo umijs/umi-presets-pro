@@ -21,10 +21,10 @@
     "dev": "pnpm build --watch"
   },
   "dependencies": {
-    "@alita/plugins": "^3.0.4",
+    "@alita/plugins": "^3.0.18",
     "@umijs/max-plugin-openapi": "1.0.3",
-    "@umijs/plugins": "^4.0.0-canary.20220628.2",
-    "umi": "^4.0.0-canary.20220628.2"
+    "@umijs/plugins": "^4.0.24",
+    "umi": "^4.0.24"
   },
   "publishConfig": {
     "access": "public"
