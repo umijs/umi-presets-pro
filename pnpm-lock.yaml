@@ -109,12 +109,12 @@ importers:
 
   packages/umi-preset-pro:
     specifiers:
-      '@alita/plugins': ^3.0.19
+      '@alita/plugins': ^3.0.20
       '@umijs/max-plugin-openapi': 1.0.5
       '@umijs/plugins': ^4.0.24
       umi: ^4.0.24
     dependencies:
-      '@alita/plugins': 3.0.19
+      '@alita/plugins': 3.0.20
       '@umijs/max-plugin-openapi': link:../max-plugin-openapi
       '@umijs/plugins': 4.0.24
       umi: 4.0.24
@@ -143,8 +143,8 @@ packages:
       '@radix-ui/popper': 0.0.10
     dev: false
 
-  /@alita/plugins/3.0.19:
-    resolution: {integrity: sha512-nAiVm51+fyHywIcn1NfCwJ1dB9IHGp0PJiH4cHldGEp8xryWaI43k9m+JOi5w25/1cEEiWokgyOA4w9MpvqKwQ==}
+  /@alita/plugins/3.0.20:
+    resolution: {integrity: sha512-C27EI0cKb/48v6ODxm5SKFqLT1Ip3G4akBZENgWQ78UYdl2NhZoyvx/Q5G0/mOZqY3mgaDXxMjSpSPdxrkbTAg==}
     dependencies:
       '@alita/babel-transform-jsx-class': 0.0.2
       '@alita/inspx': 0.0.2
