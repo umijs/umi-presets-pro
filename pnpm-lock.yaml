@@ -109,12 +109,12 @@ importers:
 
   packages/umi-preset-pro:
     specifiers:
-      '@alita/plugins': ^3.0.18
+      '@alita/plugins': ^3.0.19
       '@umijs/max-plugin-openapi': 1.0.5
       '@umijs/plugins': ^4.0.24
       umi: ^4.0.24
     dependencies:
-      '@alita/plugins': 3.0.18
+      '@alita/plugins': 3.0.19
       '@umijs/max-plugin-openapi': link:../max-plugin-openapi
       '@umijs/plugins': 4.0.24
       umi: 4.0.24
@@ -143,8 +143,8 @@ packages:
       '@radix-ui/popper': 0.0.10
     dev: false
 
-  /@alita/plugins/3.0.18:
-    resolution: {integrity: sha512-6BH/EwedjBkAam3dt0zs/e1AY8hB1qtzMnasWOTW7l1uKGyuYfUBfKiOlQ8jRV/s9FiM4GyN1x4LIdL4Ls1kxw==}
+  /@alita/plugins/3.0.19:
+    resolution: {integrity: sha512-nAiVm51+fyHywIcn1NfCwJ1dB9IHGp0PJiH4cHldGEp8xryWaI43k9m+JOi5w25/1cEEiWokgyOA4w9MpvqKwQ==}
     dependencies:
       '@alita/babel-transform-jsx-class': 0.0.2
       '@alita/inspx': 0.0.2
@@ -5731,10 +5731,10 @@ packages:
       '@ant-design/icons': 4.7.0
       '@ant-design/pro-layout': 7.1.3
       '@umijs/bundler-utils': 4.0.17
-      antd-dayjs-webpack-plugin: 1.0.6_dayjs@1.11.3
+      antd-dayjs-webpack-plugin: 1.0.6_dayjs@1.11.5
       axios: 0.27.2
       babel-plugin-import: 1.13.5
-      dayjs: 1.11.3
+      dayjs: 1.11.5
       dva-core: 2.0.4_redux@4.2.0
       dva-immer: 1.0.0
       dva-loading: 3.0.22_dva-core@2.0.4
@@ -6183,7 +6183,7 @@ packages:
     dependencies:
       '@types/js-cookie': 2.2.7
       ahooks-v3-count: 1.0.0
-      dayjs: 1.11.3
+      dayjs: 1.11.5
       intersection-observer: 0.12.2
       js-cookie: 2.2.1
       lodash: 4.17.21
@@ -6279,6 +6279,14 @@ packages:
       dayjs: '*'
     dependencies:
       dayjs: 1.11.3
+    dev: false
+
+  /antd-dayjs-webpack-plugin/1.0.6_dayjs@1.11.5:
+    resolution: {integrity: sha512-UlK3BfA0iE2c5+Zz/Bd2iPAkT6cICtrKG4/swSik5MZweBHtgmu1aUQCHvICdiv39EAShdZy/edfP6mlkS/xXg==}
+    peerDependencies:
+      dayjs: '*'
+    dependencies:
+      dayjs: 1.11.5
     dev: false
 
   /antd-mobile-icons/0.2.2:
