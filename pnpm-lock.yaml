@@ -109,12 +109,12 @@ importers:
 
   packages/umi-preset-pro:
     specifiers:
-      '@alita/plugins': ^3.0.20
+      '@alita/plugins': ^3.1.0
       '@umijs/max-plugin-openapi': 1.0.5
       '@umijs/plugins': ^4.0.24
       umi: ^4.0.24
     dependencies:
-      '@alita/plugins': 3.0.20
+      '@alita/plugins': 3.1.0
       '@umijs/max-plugin-openapi': link:../max-plugin-openapi
       '@umijs/plugins': 4.0.24
       umi: 4.0.24
@@ -143,13 +143,13 @@ packages:
       '@radix-ui/popper': 0.0.10
     dev: false
 
-  /@alita/plugins/3.0.20:
-    resolution: {integrity: sha512-C27EI0cKb/48v6ODxm5SKFqLT1Ip3G4akBZENgWQ78UYdl2NhZoyvx/Q5G0/mOZqY3mgaDXxMjSpSPdxrkbTAg==}
+  /@alita/plugins/3.1.0:
+    resolution: {integrity: sha512-/PAZ3DPbXvdlh/l7LB6W0+OajzpHyOVoh9arTRRkFomlb3t1et9d+ptjjvkj2euRaeajv/LrM/02QrBss20i1w==}
     dependencies:
       '@alita/babel-transform-jsx-class': 0.0.2
       '@alita/inspx': 0.0.2
-      '@alita/request': 3.0.1
-      '@alita/types': 3.0.2
+      '@alita/request': 3.1.0
+      '@alita/types': 3.1.0
       '@umijs/bundler-utils': 4.0.17
       '@umijs/plugins': 4.0.17
       '@umijs/utils': 4.0.17
@@ -179,14 +179,14 @@ packages:
       - supports-color
     dev: false
 
-  /@alita/request/3.0.1:
-    resolution: {integrity: sha512-BbkDtb8WE+jrFBgjn3AmzVKE14rwVRwSE4xaB0G+yp3R933Z3Rlw75V8/7zBeQ+apOOa9gXrlYNu5Mx8lpXpWw==}
+  /@alita/request/3.1.0:
+    resolution: {integrity: sha512-KPJyf3UanGSI3UQzBNXNXBUdNKBOG2V3In4GwdhGQb7eSuOGTsIMPochbGEQSA3aGUDvxqaNVbcxKVBl4aGdhw==}
     dependencies:
       umi-request: 1.4.0
     dev: false
 
-  /@alita/types/3.0.2:
-    resolution: {integrity: sha512-fND1yisAOPpGqo6a1YYokCiAWCECbL/I4enqnuSa1h0aoRtilJa58lbGsc+VFRpeXMKtk+D5h/TDc0ezKeCRUg==}
+  /@alita/types/3.1.0:
+    resolution: {integrity: sha512-E9sUHMhFSlZsmj6ZQiDw6LxqtEdH0umWjOThiWY9ApH5YGA+yhR0jejRXCcc2j6nIPl+WfF5lHuFC9QIFMjZRg==}
     dev: false
 
   /@ampproject/remapping/2.2.0:
