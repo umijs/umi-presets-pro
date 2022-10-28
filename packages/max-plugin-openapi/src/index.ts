@@ -49,6 +49,7 @@ export default (api: IApi) => {
   });
 
   api.onGenerateFiles(() => {
+    if (api.env !== 'development') return;
     const openAPIConfig = api.config.openAPI;
     const arrayConfig = lodash.flatten([openAPIConfig]);
     const config = arrayConfig?.[0]?.projectName || 'openapi';
@@ -114,6 +115,7 @@ export default (api: IApi) => {
   }
 
   const genOpenAPIFiles = async (openAPIConfig: any) => {
+    if (api.env !== 'development') return;
     const openAPIJson = await getSchema(openAPIConfig.schemaPath);
     writeFileSync(
       join(
@@ -124,6 +126,7 @@ export default (api: IApi) => {
     );
   };
   api.onDevCompileDone(async () => {
+    if (api.env !== 'development') return;
     try {
       const openAPIConfig = api.config.openAPI;
       if (Array.isArray(openAPIConfig)) {
