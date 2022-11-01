@@ -1,4 +1,4 @@
-import { IApi } from 'umi';
+import type { IApi } from 'umi';
 
 export default (api: IApi) => {
   const { REACT_APP_ENV } = process.env;
