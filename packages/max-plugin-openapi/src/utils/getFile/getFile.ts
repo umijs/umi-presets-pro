@@ -1,6 +1,6 @@
-import { winPath } from '@umijs/utils';
 import { existsSync } from 'fs';
 import { join } from 'path';
+import { winPath } from 'umi/plugin-utils';
 
 /**
  * @description

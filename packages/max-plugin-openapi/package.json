@@ -23,13 +23,10 @@
     "test": "jest -c ../../jest.config.ts"
   },
   "dependencies": {
-    "@umijs/bundler-utils": "4.0.0-canary.20220628.2",
     "@umijs/openapi": "^1.5.1",
-    "@umijs/utils": "4.0.0-canary.20220628.2",
     "rimraf": "^3.0.2",
     "serve-static": "^1.15.0",
-    "swagger-ui-dist": "^4.12.0",
-    "umi": "4.0.0-canary.20220628.2"
+    "swagger-ui-dist": "^4.12.0"
   },
   "devDependencies": {
     "@types/rimraf": "^3.0.2",

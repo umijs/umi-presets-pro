@@ -1,10 +1,10 @@
 import { generateService, getSchema } from '@umijs/openapi';
-import { lodash, winPath } from '@umijs/utils';
 import { existsSync, mkdirSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import rimraf from 'rimraf';
 import serveStatic from 'serve-static';
-import { IApi } from 'umi';
+import type { IApi } from 'umi';
+import { lodash, winPath } from 'umi/plugin-utils';
 
 export default (api: IApi) => {
   api.onStart(() => {
@@ -70,7 +70,7 @@ export default (api: IApi) => {
             dom_id: '#swagger-ui',
           });
         }, [value]);
-        
+
         return (
           <div
             style={{
