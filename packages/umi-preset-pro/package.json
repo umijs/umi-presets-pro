@@ -23,8 +23,7 @@
   "dependencies": {
     "@alita/plugins": "^3.1.0",
     "@umijs/max-plugin-openapi": "1.0.8",
-    "@umijs/plugins": "^4.0.24",
-    "umi": "^4.0.24"
+    "@umijs/plugins": "^4.0.28"
   },
   "publishConfig": {
     "access": "public"

@@ -1,5 +1,5 @@
 import { join } from 'path';
-import { IApi } from 'umi';
+import type { IApi } from 'umi';
 
 export function winPath(path: string) {
   const isExtendedLengthPath = /^\\\\\?\\/.test(path);
