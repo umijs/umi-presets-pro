@@ -1,6 +1,6 @@
 {
   "name": "@umijs/max-plugin-openapi",
-  "version": "1.0.8",
+  "version": "2.0.0",
   "description": "@umijs/max-plugin-openapi",
   "homepage": "https://github.com/umijs/umi-presets-pro/tree/master/packages/max-plugin-openapi#readme",
   "bugs": "https://github.com/umijs/umi-presets-pro/issues",
