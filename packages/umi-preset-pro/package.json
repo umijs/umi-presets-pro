@@ -1,6 +1,6 @@
 {
   "name": "umi-presets-pro",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "umi preset for ant design pro",
   "homepage": "https://github.com/umijs/umi-presets-pro/tree/master/packages/umi-presets-pro#readme",
   "bugs": "https://github.com/umijs/umi-presets-pro/issues",
@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@alita/plugins": "^3.1.0",
-    "@umijs/max-plugin-openapi": "2.0.0",
+    "@umijs/max-plugin-openapi": "2.0.1",
     "@umijs/plugins": "^4.0.28",
     "@umijs/request-record": "^1.1.2",
     "swagger-ui-dist": "^4.14.2"
