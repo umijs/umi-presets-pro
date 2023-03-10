@@ -23,14 +23,14 @@
     "test": "jest -c ../../jest.config.ts"
   },
   "dependencies": {
-    "@umijs/openapi": "^1.5.1",
-    "rimraf": "^3.0.2",
+    "@umijs/openapi": "^1.8.3",
+    "rimraf": "^4.4.0",
     "serve-static": "^1.15.0",
-    "swagger-ui-dist": "^4.12.0"
+    "swagger-ui-dist": "^4.18.1"
   },
   "devDependencies": {
-    "@types/rimraf": "^3.0.2",
-    "@types/serve-static": "^1.13.10"
+    "@types/rimraf": "^4.0.5",
+    "@types/serve-static": "^1.15.1"
   },
   "publishConfig": {
     "access": "public"
