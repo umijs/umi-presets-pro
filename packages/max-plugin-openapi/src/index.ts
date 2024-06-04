@@ -21,9 +21,16 @@ export default (api: IApi) => {
           projectName: joi.string(),
           apiPrefix: joi.alternatives(joi.string(), joi.function()),
           namespace: joi.string(),
+          serversPath: joi.string(),
+          nullable: joi.boolean(),
+          dataFields: joi.array().items(joi.string()),
+          isCamelCase: joi.boolean(),
           hook: joi.object({
+            afterOpenApiDataInited: joi.function(),
             customFunctionName: joi.function(),
+            customTypeName: joi.function(),
             customClassName: joi.function(),
+            customFileNames: joi.function(),
           }),
         });
         return joi.alternatives(joi.array().items(itemSchema), itemSchema);
