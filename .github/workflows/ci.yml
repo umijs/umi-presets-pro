@@ -43,6 +43,7 @@ jobs:
         with:
           node-version: 20
 
+      - run: pnpm install
       - run: pnpm build
       - run: pnpm tsc --noEmit
       - run: pnpm test
