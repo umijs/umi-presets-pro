@@ -38,10 +38,9 @@ jobs:
         with:
           cache: true
 
-      - name: Use Node.js 20
-        uses: actions/setup-node@v5
+      - uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 16
 
       - run: pnpm install
       - run: pnpm build
