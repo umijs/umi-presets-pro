@@ -21,6 +21,7 @@ export default (api: IApi) => {
           projectName: joi.string(),
           apiPrefix: joi.alternatives(joi.string(), joi.function()),
           namespace: joi.string(),
+          dataFields: joi.array().items(joi.string()),
           hook: joi.object({
             customFunctionName: joi.function(),
             customClassName: joi.function(),
