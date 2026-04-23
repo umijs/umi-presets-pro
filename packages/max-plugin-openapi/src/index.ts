@@ -30,6 +30,7 @@ export default (api: IApi) => {
             customFunctionName: joi.function(),
             customTypeName: joi.function(),
             customClassName: joi.function(),
+            customTypeName: joi.function(),
             customFileNames: joi.function(),
           }),
         });
